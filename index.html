@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meme Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+            padding: 50px;
+        }
+        .meme {
+            display: inline-block;
+            position: relative;
+            width: 400px;
+            height: 300px;
+            background-image: url('meme-template.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .top-text, .bottom-text {
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 24px;
+            line-height: 3em;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+        .top-text {
+            top: 0;
+        }
+        .bottom-text {
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meme Generator</h1>
+    <div class="meme">
+        <div class="top-text" contenteditable>Top Text</div>
+        <div class="bottom-text" contenteditable>Bottom Text</div>
+    </div>
+</body>
+</html>
